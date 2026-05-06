@@ -43,86 +43,93 @@ body { font-family: Arial; margin:0; background:#f5f5f5; }
     padding:20px;
 }
 
-img { width:48%; margin:5px; }
-
-.floating {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
+.images {
+    display:flex;
+    gap:20px;
 }
 
-.main-btn {
-  width: 60px;
-  height: 60px;
-  background: orange;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 60px;
-  font-size: 30px;
-  color: white;
-  cursor: pointer;
+.images img {
+    width:48%;
 }
 
-.menu {
-  display: none;
-  flex-direction: column;
+table {
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
 }
 
-.menu a {
-  margin: 5px;
-  padding: 10px;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+td, th {
+    border:1px solid #ccc;
+    padding:8px;
 }
-
-.tg { background:#0088cc; }
-.vb { background:#665cac; }
-.wa { background:#25d366; }
 </style>
 </head>
 
 <body>
 
 <div class="hero">
-
 <div class="typewriter">
 I am a skier rushing down the mountain like a stone, but the one inside me believes I am an alpine skier.
 </div>
 
 <h1>Тренажёр для горнолыжников</h1>
-
 <a href="tel:+380984470332" class="btn">Позвонить</a>
-
 </div>
 
 <div class="container">
 
+<div class="images">
 <img src="https://via.placeholder.com/400">
 <img src="https://via.placeholder.com/400">
-
-<p>Тренажёр для тренировок горнолыжников.</p>
-
 </div>
 
-<div class="floating">
+<h2>Характеристики</h2>
+<table>
+<tr><th>Параметр</th><th>Значение</th></tr>
+<tr><td>Вес</td><td>от 34 кг</td></tr>
+<tr><td>Размер</td><td>2.5 × 1.5 м</td></tr>
+</table>
 
-<div class="menu" id="menu">
-<a href="https://t.me/" class="tg">Telegram</a>
-<a href="viber://chat?number=%2B380984470332" class="vb">Viber</a>
-<a href="https://wa.me/380984470332" class="wa">WhatsApp</a>
+<h2>Преимущества</h2>
+<table>
+<tr><td>✔ Имитация катания</td></tr>
+<tr><td>✔ Развитие баланса</td></tr>
+<tr><td>✔ Регулировка нагрузки</td></tr>
+<tr><td>✔ Безопасность</td></tr>
+<tr><td>✔ Компактность</td></tr>
+<tr><td>✔ Подходит всем</td></tr>
+<tr><td>✔ Тренировка дома</td></tr>
+<tr><td>✔ Укрепление мышц</td></tr>
+<tr><td>✔ Простая настройка</td></tr>
+</table>
+
+<h2>Видео</h2>
+
+<div style="text-align:center;">
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/RfePzRftS3c"
+frameborder="0" allowfullscreen></iframe>
 </div>
 
-<div class="main-btn" onclick="toggleMenu()">💬</div>
-
 </div>
-
-<script>sss
-function toggleMenu() {
-  var m = document.getElementById("menu");
-  m.style.display = (m.style.display==="flex") ? "none" : "flex";
-}
-</script>
 
 </body>
 </html>
+
+
+
+
+
+
+ 
+ 
+    
+
+
+  
+
+
+
+
+
+
